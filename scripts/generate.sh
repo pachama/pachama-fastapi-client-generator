@@ -114,7 +114,7 @@ fill_import_name_templates() {
   fill_import_name_template "$PACKAGE_DIR"/api_client.py
   fill_import_name_template "$PACKAGE_DIR"/__init__.py
 
-  pushd "${PACKAGE_DIR}/api"
+  pushd "${PACKAGE_DIR}/apis"
   find . -name "*.py" | while read -r filename; do
     fill_import_name_template "$filename"
   done
